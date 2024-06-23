@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="paramtersfromtestNg" value="user,false"/>
+  <listeners>
+    <listener class-name="com.leonardoAI.utilities.ExtentReport"/>
+  </listeners>
+  <test thread-count="1" name="LeonardoAI(failed)">
+    <classes>
+      <class name="com.leonardoAI.testCases.TC_ImageGenerationPage">
+        <methods>
+          <include name="Setup"/>
+          <include name="test_RenameDonwloadedFile"/>
+          <include name="Logout"/>
+          <include name="Teardown"/>
+          <include name="test_DownLoadGenerateImage"/>
+          <include name="test_GenerateImage"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.leonardoAI.testCases.TC_ImageGenerationPage -->
+    </classes>
+  </test> <!-- LeonardoAI(failed) -->
+</suite> <!-- Failed suite [Suite] -->

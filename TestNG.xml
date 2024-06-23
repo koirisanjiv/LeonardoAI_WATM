@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="none" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.leonardoAI.utilities.ExtentReport"></listener>
+	</listeners>
+
+	<parameter name="browser" value="chrome"></parameter><!-- value is only
+	[chrome, firefor, edge]-->
+	<parameter name="paramtersfromtestNg" value="user,false"></parameter><!--
+	value is only
+	[admin, user, true, false] note: true false is used for debuggermode
+	confirmation-->
+
+
+	<test name="LeonardoAI_WATM">
+
+		<classes>
+
+
+			<!-- =======LEONARDOAI WEBSITE TESTING========= -->
+
+			<!--<class name="com.leonardoAI.testCases.TC_Home"/>-->
+
+			<class name="com.leonardoAI.testCases.TC_ImageGenerationPage" />
+
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

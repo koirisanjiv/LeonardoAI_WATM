@@ -1,0 +1,64 @@
+11:56:01.215 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - ✅✅✅ LOGOUT DONE ...
+11:56:02.306 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Driver shutdown
+17:20:27.353 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Base class started...
+17:20:27.401 [main] INFO  com.leonardoAI.utilities.CustomizedChromeOptions - Disabled Ads and Notifications
+17:20:37.906 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Chrome driver selected
+17:20:49.264 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login page started
+17:20:49.461 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Maximize the window
+17:20:49.839 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login user Email: l5344052@gmail.com and Password: Qwer4321!
+17:20:49.843 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Method called Login: Login
+17:20:50.336 [main] INFO  com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement - Switched to new window: 0FA10E5ADE753DBBCB02C7F679C36DF4
+17:20:50.336 [main] INFO  com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement - Old window: 9969E7B84C0486717A4FAED7CAC07101
+17:20:50.337 [main] INFO  com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement - Clicked on btnLaunchApp
+17:20:53.723 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Enteterd email
+17:20:54.829 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Entered password
+17:20:55.315 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on login submit button
+17:20:55.520 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 0
+17:20:56.637 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 1
+17:20:58.701 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 2
+17:20:59.738 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 3
+17:21:04.634 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnGettingStartedCloseButton
+17:21:04.635 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+17:21:05.669 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 1
+17:21:06.717 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 2
+17:21:07.794 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 3
+17:21:08.851 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 4
+17:21:09.878 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 5
+17:21:10.928 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 6
+17:21:11.976 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 7
+17:21:13.021 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 8
+17:21:14.094 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 9
+17:21:15.144 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 10
+17:21:16.169 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 11
+17:21:17.209 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 12
+17:21:18.314 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 13
+17:21:19.345 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 14
+17:21:20.379 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 15
+17:21:21.427 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 16
+17:21:22.485 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 17
+17:21:23.564 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 18
+17:21:24.599 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 19
+17:21:25.646 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 20
+17:21:27.263 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - ✅✅✅ Login PASS ...
+17:21:29.506 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the menuImageGeneration
+17:21:33.587 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Caller methods name: test_GenerateImage
+17:21:33.588 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+17:21:34.804 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnIntroGuide
+17:21:39.249 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Entered yourPrompt
+17:21:39.779 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Waiting for at least 15 seconds
+17:21:54.838 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Going go wait for: 500 seconds dynamically
+17:21:57.974 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - ✅✅✅ Image generated successfully
+17:21:58.052 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - null
+17:22:02.073 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Caller methods name: test_DownLoadGenerateImage
+17:22:03.650 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Clicked on the Donwlaod Image
+17:22:05.010 [main] INFO  com.leonardoAI.utilities.WaitForNewIFilePresenceInDirectory - New file detected: Default_Create_a_cute_baby_3.jpg
+17:22:05.012 [main] INFO  com.leonardoAI.utilities.WaitForNewIFilePresenceInDirectory - ✅✅✅ Image downloaded successfully.
+17:22:05.063 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - Caller methods name: test_RenameDonwloadedFile
+17:22:05.367 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - Latest downloaded file: Default_Create_a_cute_baby_3.jpg
+17:22:05.384 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - File renamed and moved successfully to: C:\Users\koiri\Downloads\LeonardoAI\Default_Create_a_cute_baby_3.jpg
+17:22:05.395 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Method called: Logout
+17:22:09.712 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the logoBackButton
+17:22:13.833 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the userLogoIcon
+17:22:16.141 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the logout
+17:22:17.259 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - ✅✅✅ LOGOUT DONE ...
+17:22:18.273 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Driver shutdown

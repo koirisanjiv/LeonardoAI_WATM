@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-23T11:54:18 IST" name="Suite" finished-at="2024-06-23T11:56:02 IST" duration-ms="103666">
+    <groups>
+    </groups>
+    <test started-at="2024-06-23T11:54:18 IST" name="LeonardoAI_WATM" finished-at="2024-06-23T11:56:02 IST" duration-ms="103666">
+      <class name="com.leonardoAI.testCases.TC_ImageGenerationPage">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@3dddefd8]" started-at="2024-06-23T11:54:18 IST" name="Setup" finished-at="2024-06-23T11:54:35 IST" duration-ms="16904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="Login(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@3dddefd8]" started-at="2024-06-23T11:54:35 IST" name="Login" finished-at="2024-06-23T11:55:13 IST" duration-ms="37773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user,false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="test_GenerateImage()[pri:1, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@3dddefd8]" started-at="2024-06-23T11:55:13 IST" name="test_GenerateImage" finished-at="2024-06-23T11:55:43 IST" duration-ms="29773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_GenerateImage -->
+        <test-method signature="test_DownLoadGenerateImage()[pri:2, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@3dddefd8]" started-at="2024-06-23T11:55:43 IST" name="test_DownLoadGenerateImage" finished-at="2024-06-23T11:55:50 IST" duration-ms="6568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_DownLoadGenerateImage -->
+        <test-method signature="test_RenameDonwloadedFile()[pri:3, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@3dddefd8]" started-at="2024-06-23T11:55:50 IST" name="test_RenameDonwloadedFile" finished-at="2024-06-23T11:55:50 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_RenameDonwloadedFile -->
+        <test-method is-config="true" signature="Logout(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@3dddefd8]" started-at="2024-06-23T11:55:50 IST" name="Logout" finished-at="2024-06-23T11:56:01 IST" duration-ms="10972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user,false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="Teardown(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@3dddefd8]" started-at="2024-06-23T11:56:01 IST" name="Teardown" finished-at="2024-06-23T11:56:02 IST" depends-on-methods="com.leonardoAI.testCases.BaseClass.Logout" duration-ms="914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user,false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- com.leonardoAI.testCases.TC_ImageGenerationPage -->
+    </test> <!-- LeonardoAI_WATM -->
+  </suite> <!-- Suite -->
+</testng-results>

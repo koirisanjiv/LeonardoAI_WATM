@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [P360_UI_USER_MODULE]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.p360.utilities.ExtentReport"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="MembershipFunctionality(failed)">
+    <classes>
+      <class name="com.p360.testCases.TC_Membership">
+        <methods>
+          <include name="Setup"/>
+          <include name="test_ChangeMembership" invocation-numbers="0"/>
+          <include name="test_ResumeMembership"/>
+          <include name="Login"/>
+          <include name="Teardown"/>
+          <include name="Logout"/>
+          <include name="test_CheckAgreedTerms"/>
+          <include name="test_PauseMembership" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.p360.testCases.TC_Membership -->
+    </classes>
+  </test> <!-- MembershipFunctionality(failed) -->
+</suite> <!-- Failed suite [P360_UI_USER_MODULE] -->

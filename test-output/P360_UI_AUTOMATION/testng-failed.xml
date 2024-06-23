@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [P360_UI_AUTOMATION]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.p360.utilities.ExtentReport_MultiThreading"/>
+  </listeners>
+  <test thread-count="5" name="HomePage(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.p360.testCases.TC_Home">
+        <methods>
+          <include name="Setup"/>
+          <include name="test_HomePageElement"/>
+          <include name="Login"/>
+          <include name="test_ChangeCardDetails"/>
+          <include name="Teardown"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.p360.testCases.TC_Home -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+  <test thread-count="5" name="MembershipFunctionality(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.p360.testCases.TC_Membership">
+        <methods>
+          <include name="test_ResumeMembership"/>
+          <include name="test_ChangeMembership"/>
+          <include name="Setup"/>
+          <include name="Login"/>
+          <include name="Teardown"/>
+          <include name="Logout"/>
+          <include name="test_CheckAgreedTerms"/>
+          <include name="test_PauseMembership"/>
+        </methods>
+      </class> <!-- com.p360.testCases.TC_Membership -->
+    </classes>
+  </test> <!-- MembershipFunctionality(failed) -->
+  <test thread-count="5" name="ClassesFunctionality(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.p360.testCases.TC_Classes">
+        <methods>
+          <include name="Setup"/>
+          <include name="test_CancelRegisteredClass"/>
+          <include name="test_RegisterClass"/>
+          <include name="Login"/>
+          <include name="Teardown"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- com.p360.testCases.TC_Classes -->
+    </classes>
+  </test> <!-- ClassesFunctionality(failed) -->
+</suite> <!-- Failed suite [P360_UI_AUTOMATION] -->
