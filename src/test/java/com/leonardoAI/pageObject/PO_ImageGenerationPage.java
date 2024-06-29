@@ -28,6 +28,9 @@ import com.leonardoAI.pageObject.pageLocators.PL_ImageGenerationPage;
 import com.leonardoAI.pageObject.pageLocators.PL_LoginPage;
 import com.leonardoAI.projectUtility.FindThreeDotAndClick;
 import com.leonardoAI.testCases.BaseClass;
+import com.leonardoAI.utilities.ClickOnAnyButton;
+import com.leonardoAI.utilities.NavigateToNewTab;
+import com.leonardoAI.utilities.SetDataInTextInputField;
 import com.leonardoAI.utilities.WaitForNewIFilePresenceInDirectory;
 
 public class PO_ImageGenerationPage extends ReUseAbleElement {
@@ -42,6 +45,9 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 	public Actions action;
 	public SoftAssert softAssert = new SoftAssert();
 
+	public SetDataInTextInputField setDataInInputField = new SetDataInTextInputField();
+	public NavigateToNewTab navigateToNewTab = new NavigateToNewTab();
+	public ClickOnAnyButton clickOnAnyButton = new ClickOnAnyButton();
 	public WaitForNewIFilePresenceInDirectory filePreseceIndirectory = new WaitForNewIFilePresenceInDirectory();
 
 	// CONSTRUCTOR CREATION
@@ -61,14 +67,6 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 	@FindBy(xpath = PL_ImageGenerationPage.address_elementIsImageGeneratePageReady)
 	@CacheLookup
 	public WebElement elementIsImageGeneratePageReady;
-
-	@FindBy(xpath = PL_ImageGenerationPage.address_textareaPromptInput)
-	@CacheLookup
-	public WebElement textareaPromptInput;
-
-	@FindBy(xpath = PL_ImageGenerationPage.address_btnGenerateImage)
-	@CacheLookup
-	public WebElement btnGenerateImage;
 
 	@FindBy(xpath = PL_ImageGenerationPage.address_listGeneratedImage)
 	@CacheLookup
@@ -138,28 +136,6 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 		return isImageGeneratePageReady;
 	}
 
-	public void setPrompt(String yourPrompt) throws InterruptedException {
-		try {
-			textareaPromptInput.sendKeys(Keys.CONTROL, "a");
-			textareaPromptInput.sendKeys(Keys.DELETE);
-			textareaPromptInput.sendKeys(yourPrompt);
-			Thread.sleep(2000);
-			logger.info("Entered yourPrompt");
-		} catch (Exception e) {
-			logger.info(e.getCause());
-		}
-
-	}
-
-	public void clickOnBtnGenerateImage() throws InterruptedException {
-		try {
-			btnGenerateImage.click();
-			logger.info("Waiting for at least 15 seconds");
-			Thread.sleep(15000);
-		} catch (Exception e) {
-			logger.info(e.getCause());
-		}
-	}
 
 	public boolean checkIsImageGenerated() {
 		boolean isImageGenerated = false;
@@ -216,8 +192,8 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 		logger.info("Caller methods name: " + callerMethodName);
 
 		if (checkIsImageGeneratePageReady()) {
-			setPrompt(yourPrompt);
-			clickOnBtnGenerateImage();
+			setDataInInputField.callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue(driver, "SetPrompt", PL_ImageGenerationPage.address_textareaPromptInput, yourPrompt);
+			clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Generate Image", PL_ImageGenerationPage.address_btnGenerateImage);
 			checkIsImageGenerated();
 		}
 

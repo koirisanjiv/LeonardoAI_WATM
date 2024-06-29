@@ -62,3 +62,371 @@
 17:22:16.141 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the logout
 17:22:17.259 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - ✅✅✅ LOGOUT DONE ...
 17:22:18.273 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Driver shutdown
+21:17:58.649 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Base class started...
+21:17:58.689 [main] INFO  com.leonardoAI.utilities.CustomizedChromeOptions - Disabled Ads and Notifications
+21:18:03.265 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Chrome driver selected
+21:18:15.794 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login page started
+21:18:15.963 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Maximize the window
+21:18:16.262 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login user Email: l5344052@gmail.com and Password: Qwer4321!
+21:18:16.263 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Method called Login: Login
+21:18:16.683 [main] INFO  com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement - Switched to new window: 4ECBC7E81A0F3B1AF965991EBD9D04B8
+21:18:16.684 [main] INFO  com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement - Old window: 6FB19DCF8C840E7A5A88762249DAC8C6
+21:18:16.684 [main] INFO  com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement - Clicked on btnLaunchApp
+21:18:20.071 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:18:20.072 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Email and >> (//input[@id='email'])[1]
+21:18:21.874 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Email with data >> l5344052@gmail.com
+21:18:23.078 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:18:23.079 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Password and >> (//input[@id='password'])[1]
+21:18:24.148 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Password with data >> Qwer4321!
+21:18:25.373 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: Login
+21:18:25.375 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Submit and >> (//button[normalize-space()='Sign in'])[1]
+21:18:26.046 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Submit
+21:18:27.049 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 0
+21:18:28.119 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 1
+21:18:42.349 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnGettingStartedCloseButton
+21:18:42.350 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+21:18:43.379 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 1
+21:18:44.424 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 2
+21:18:45.465 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 3
+21:18:46.508 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 4
+21:18:47.543 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 5
+21:18:48.574 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 6
+21:18:49.604 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 7
+21:18:50.627 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 8
+21:18:51.657 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 9
+21:18:52.698 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 10
+21:18:53.736 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 11
+21:18:54.762 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 12
+21:18:55.914 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 13
+21:18:56.966 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 14
+21:18:57.994 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 15
+21:18:59.022 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 16
+21:19:00.052 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 17
+21:19:01.099 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 18
+21:19:02.126 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 19
+21:19:03.154 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 20
+21:19:04.765 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - ✅✅✅ Login PASS ...
+21:19:06.929 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the menuImageGeneration
+21:19:10.962 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Caller methods name: test_GenerateImage
+21:19:10.963 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+21:19:12.153 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnIntroGuide
+21:19:16.270 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Entered yourPrompt
+21:19:16.746 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Waiting for at least 15 seconds
+21:19:31.786 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Going go wait for: 500 seconds dynamically
+21:19:35.853 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - ✅✅✅ Image generated successfully
+21:19:35.944 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - null
+21:19:39.960 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Caller methods name: test_DownLoadGenerateImage
+21:19:41.386 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Clicked on the Donwlaod Image
+21:19:42.434 [main] INFO  com.leonardoAI.utilities.WaitForNewIFilePresenceInDirectory - New file detected: eff5da86-0bd1-4638-a871-8ba15286cb47.tmp
+21:19:43.444 [main] INFO  com.leonardoAI.utilities.WaitForNewIFilePresenceInDirectory - New file detected: Default_Create_a_cute_baby_3.jpg
+21:19:43.445 [main] INFO  com.leonardoAI.utilities.WaitForNewIFilePresenceInDirectory - ✅✅✅ Image downloaded successfully.
+21:19:43.463 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - Caller methods name: test_RenameDonwloadedFile
+21:19:44.962 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - Latest downloaded file: Default_Create_a_cute_baby_3.jpg
+21:19:45.008 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - File renamed and moved successfully to: C:\Users\koiri\Downloads\LeonardoAI\Default_Create_a_cute_baby_3.jpg
+21:19:45.018 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Method called: Logout
+21:19:49.208 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the logoBackButton
+21:19:52.054 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the userLogoIcon
+21:19:54.234 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the logout
+21:19:56.975 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - ✅✅✅ LOGOUT DONE ...
+21:19:58.051 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Driver shutdown
+21:23:02.313 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Base class started...
+21:23:02.345 [main] INFO  com.leonardoAI.utilities.CustomizedChromeOptions - Disabled Ads and Notifications
+21:23:06.819 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Chrome driver selected
+21:23:16.844 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login page started
+21:23:17.046 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Maximize the window
+21:23:17.445 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login user Email: l5344052@gmail.com and Password: Qwer4321!
+21:23:17.446 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Method called Login: Login
+21:23:17.447 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Method called 'changeBetweenTabs' and Caller method name: Login
+21:23:17.514 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - originalWindow: AI Image Generator - Create Art, Images & Video | Leonardo AI
+21:23:17.558 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Open Windows: 21E0FB6D32689907AE3847350D885E26
+21:23:17.560 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: changeBetweenTabs
+21:23:17.561 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Launch App and >> (//div//a[@title='Launch App'])[2]
+21:23:18.456 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Launch App
+21:23:19.777 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - newWindowHandle: Leonardo.Ai
+21:23:19.882 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - New Window: Leonardo.Ai
+21:23:19.883 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Switched to the new tab
+21:23:20.048 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:23:20.048 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Email and >> (//input[@id='email'])[1]
+21:23:21.569 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Email with data >> l5344052@gmail.com
+21:23:22.774 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:23:22.775 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Password and >> (//input[@id='password'])[1]
+21:23:23.817 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Password with data >> Qwer4321!
+21:23:25.030 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: Login
+21:23:25.032 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Submit and >> (//button[normalize-space()='Sign in'])[1]
+21:23:25.660 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Submit
+21:23:26.676 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 0
+21:23:27.875 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 1
+21:23:28.908 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 2
+21:23:29.921 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 3
+21:23:30.956 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 4
+21:23:31.963 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 5
+21:29:59.792 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Base class started...
+21:29:59.825 [main] INFO  com.leonardoAI.utilities.CustomizedChromeOptions - Disabled Ads and Notifications
+21:30:03.462 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Chrome driver selected
+21:30:06.712 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login page started
+21:30:13.573 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Maximize the window
+21:30:13.810 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Login user Email: l5344052@gmail.com and Password: Qwer4321!
+21:30:13.811 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Method called Login: Login
+21:30:13.812 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Method called 'changeBetweenTabs' and Caller method name: Login
+21:30:13.860 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - originalWindow: AI Image Generator - Create Art, Images & Video | Leonardo AI
+21:30:13.900 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Open Windows: 80F46327232BF2D3859272CE4C5FE36E
+21:30:13.904 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: changeBetweenTabs
+21:30:13.906 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Launch App and >> (//div//a[@title='Launch App'])[2]
+21:30:14.903 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Launch App
+21:30:17.304 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - newWindowHandle: Leonardo.Ai
+21:30:17.593 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - New Window: Leonardo.Ai
+21:30:17.594 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Switched to the new tab
+21:30:17.672 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:30:17.673 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Email and >> (//input[@id='email'])[1]
+21:30:19.291 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Email with data >> l5344052@gmail.com
+21:30:20.529 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:30:20.530 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Password and >> (//input[@id='password'])[1]
+21:30:21.489 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Password with data >> Qwer4321!
+21:30:22.703 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: Login
+21:30:22.704 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Submit and >> (//button[normalize-space()='Sign in'])[1]
+21:30:23.315 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Submit
+21:30:24.320 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 0
+21:30:29.477 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 1
+21:30:34.665 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnGettingStartedCloseButton
+21:30:34.666 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+21:30:35.719 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 1
+21:30:36.750 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 2
+21:30:37.806 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 3
+21:30:38.831 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 4
+21:30:39.896 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 5
+21:30:40.930 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 6
+21:30:41.963 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 7
+21:30:42.995 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 8
+21:30:44.028 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 9
+21:30:45.067 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 10
+21:30:46.107 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 11
+21:30:47.138 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 12
+21:30:48.174 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 13
+21:30:49.210 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 14
+21:30:50.247 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 15
+21:30:51.270 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 16
+21:30:52.298 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 17
+21:30:53.342 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 18
+21:30:54.366 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 19
+21:30:55.410 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 20
+21:30:57.001 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - ✅✅✅ Login PASS ...
+21:30:59.181 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the menuImageGeneration
+21:31:03.193 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Caller methods name: test_GenerateImage
+21:31:03.193 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+21:31:04.376 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnIntroGuide
+21:31:05.807 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: generateImage
+21:31:05.807 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>SetPrompt and >> (//textarea[@id='prompt-input'])[1]
+21:31:07.123 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> SetPrompt with data >> Create a cute baby
+21:31:08.332 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: generateImage
+21:31:08.333 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Generate Image and >> //div[@data-tour-id='generate-button']
+21:31:09.353 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Generate Image
+21:31:10.407 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Going go wait for: 500 seconds dynamically
+21:31:12.229 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - ✅✅✅ Image generated successfully
+21:31:13.019 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - null
+21:31:17.036 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - Caller methods name: test_DownLoadGenerateImage
+21:31:18.012 [main] INFO  com.leonardoAI.pageObject.PO_ImageGenerationPage - java.lang.reflect.InvocationTargetException
+21:31:18.037 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - Caller methods name: test_RenameDonwloadedFile
+21:31:18.289 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - Latest downloaded file: AutoIT.exe
+21:31:18.293 [main] INFO  com.leonardoAI.utilities.FindFileAndRename - File renamed and moved successfully to: C:\Users\koiri\Downloads\LeonardoAI\AutoIT.exe
+21:31:18.305 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Method called: Logout
+21:31:22.577 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the logoBackButton
+21:31:25.077 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the userLogoIcon
+21:31:27.257 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Clicked on the logout
+21:31:28.332 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - ✅✅✅ LOGOUT DONE ...
+21:31:29.752 [main] INFO  com.leonardoAI.testCases.TC_ImageGenerationPage - Driver shutdown
+21:39:04.030 [main] INFO  com.leonardoAI.testCases.TC_Home - Base class started...
+21:39:04.071 [main] INFO  com.leonardoAI.utilities.CustomizedChromeOptions - Disabled Ads and Notifications
+21:39:10.673 [main] INFO  com.leonardoAI.testCases.TC_Home - Chrome driver selected
+21:39:25.711 [main] INFO  com.leonardoAI.testCases.TC_Home - Login page started
+21:39:25.865 [main] INFO  com.leonardoAI.testCases.TC_Home - Maximize the window
+21:39:26.095 [main] INFO  com.leonardoAI.testCases.TC_Home - Login user Email: l5344052@gmail.com and Password: Qwer4321!
+21:39:26.095 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Method called Login: Login
+21:39:26.097 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Method called 'changeBetweenTabs' and Caller method name: Login
+21:39:26.137 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - originalWindow: AI Image Generator - Create Art, Images & Video | Leonardo AI
+21:39:26.159 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Open Windows: D709E320F7D9E0969A02382026E92D54
+21:39:26.160 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: changeBetweenTabs
+21:39:26.164 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Launch App and >> (//div//a[@title='Launch App'])[2]
+21:39:27.027 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Launch App
+21:39:30.369 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - newWindowHandle: Leonardo.Ai
+21:39:30.463 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - New Window: Leonardo.Ai
+21:39:30.463 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Switched to the new tab
+21:39:30.672 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:39:30.672 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Email and >> (//input[@id='email'])[1]
+21:39:31.758 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Email with data >> l5344052@gmail.com
+21:39:32.979 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:39:32.980 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Password and >> (//input[@id='password'])[1]
+21:39:34.169 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Password with data >> Qwer4321!
+21:39:35.393 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: Login
+21:39:35.394 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Submit and >> (//button[normalize-space()='Sign in'])[1]
+21:39:36.015 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Submit
+21:39:37.016 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 0
+21:39:38.116 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 1
+21:39:39.172 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 2
+21:39:41.116 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 3
+21:39:46.994 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnGettingStartedCloseButton
+21:39:46.995 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+21:39:48.049 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 1
+21:39:49.085 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 2
+21:39:50.117 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 3
+21:39:51.174 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 4
+21:39:52.225 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 5
+21:39:53.255 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 6
+21:39:54.282 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 7
+21:39:55.308 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 8
+21:39:56.331 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 9
+21:39:57.356 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 10
+21:39:58.387 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 11
+21:39:59.438 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 12
+21:40:00.488 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 13
+21:40:01.536 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 14
+21:40:02.576 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 15
+21:40:03.617 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 16
+21:40:04.656 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 17
+21:40:05.686 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 18
+21:40:06.712 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 19
+21:40:07.785 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 20
+21:40:09.381 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - ✅✅✅ Login PASS ...
+21:40:14.442 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:40:14.443 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Image generation and >> //a//p[text()='Image Generation']
+21:40:15.058 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Image generation
+21:40:17.918 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:40:17.918 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Real Time Canvas and >> //a//p[text()='Realtime Canvas']
+21:40:19.770 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Real Time Canvas
+21:40:22.231 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:40:22.232 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Motion and >> //a//p[text()='Motion']
+21:40:23.265 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Motion
+21:40:25.975 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:40:25.976 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Canvas Editor and >> //a//p[text()='Canvas Editor']
+21:40:26.183 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Exception from callMeToClickOnAnyButtonWithNameAndXpath >> no such element: Unable to locate element: {"method":"xpath","selector":"//a//p[text()='Canvas Editor']"}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce5fa2978c9e221053b66afe241bd1f5, findElement {using=xpath, value=//a//p[text()='Canvas Editor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\koiri\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56323}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56323/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce5fa2978c9e221053b66afe241bd1f5
+21:40:27.262 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:40:27.264 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Universal Upscaler and >> //a//p[text()='Universal Upscaler']
+21:40:27.297 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Exception from callMeToClickOnAnyButtonWithNameAndXpath >> no such element: Unable to locate element: {"method":"xpath","selector":"//a//p[text()='Universal Upscaler']"}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce5fa2978c9e221053b66afe241bd1f5, findElement {using=xpath, value=//a//p[text()='Universal Upscaler']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\koiri\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56323}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56323/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce5fa2978c9e221053b66afe241bd1f5
+21:40:28.356 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Method called: Logout
+21:40:30.396 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Exception from: clickOnLogoBackButton >> no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@role='group'])[2]"}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce5fa2978c9e221053b66afe241bd1f5, findElement {using=xpath, value=(//a[@role='group'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\koiri\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56323}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56323/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce5fa2978c9e221053b66afe241bd1f5
+21:40:30.420 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - null
+21:40:30.439 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - null
+21:40:31.509 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - ✅✅✅ LOGOUT DONE ...
+21:40:33.287 [main] INFO  com.leonardoAI.testCases.TC_Home - Driver shutdown
+21:46:03.127 [main] INFO  com.leonardoAI.testCases.TC_Home - Base class started...
+21:46:23.969 [main] INFO  com.leonardoAI.testCases.TC_Home - Chrome driver selected
+21:46:31.983 [main] INFO  com.leonardoAI.testCases.TC_Home - Login page started
+21:46:32.158 [main] INFO  com.leonardoAI.testCases.TC_Home - Maximize the window
+21:46:32.191 [main] INFO  com.leonardoAI.testCases.TC_Home - wantToEnableDebuggerMode: false And debugger post: 9222
+21:46:32.192 [main] INFO  com.leonardoAI.testCases.TC_Home - wantToByPassLoginLogout: false
+21:46:32.199 [main] INFO  com.leonardoAI.testCases.TC_Home - incognitoMode: false
+21:46:32.199 [main] INFO  com.leonardoAI.testCases.TC_Home - headerLessBrowsing: false
+21:46:32.200 [main] INFO  com.leonardoAI.testCases.TC_Home - wantToBlockAdsAndNotifications: false
+21:46:32.607 [main] INFO  com.leonardoAI.testCases.TC_Home - Login user Email: l5344052@gmail.com and Password: Qwer4321!
+21:46:32.608 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Method called Login: Login
+21:46:32.609 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Method called 'changeBetweenTabs' and Caller method name: Login
+21:46:32.636 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - originalWindow: AI Image Generator - Create Art, Images & Video | Leonardo AI
+21:46:33.130 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Open Windows: 774A1FCAE4974AE904DC5CC12863945D
+21:46:33.130 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: changeBetweenTabs
+21:46:33.131 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Launch App and >> (//div//a[@title='Launch App'])[2]
+21:46:33.841 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Launch App
+21:46:38.220 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - newWindowHandle: Leonardo.Ai
+21:46:38.551 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - New Window: Leonardo.Ai
+21:46:38.551 [main] INFO  com.leonardoAI.utilities.NavigateToNewTab - Switched to the new tab
+21:46:38.603 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:46:38.603 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Email and >> (//input[@id='email'])[1]
+21:46:39.817 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Email with data >> l5344052@gmail.com
+21:46:41.026 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: Login
+21:46:41.027 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Element name and xpath >>Password and >> (//input[@id='password'])[1]
+21:46:42.002 [main] INFO  com.leonardoAI.utilities.SetDataInTextInputField - Value Enteterd into >> Password with data >> Qwer4321!
+21:46:43.221 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: Login
+21:46:43.222 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Submit and >> (//button[normalize-space()='Sign in'])[1]
+21:46:43.862 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Submit
+21:46:44.865 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 0
+21:46:47.284 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 1
+21:46:48.316 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - Loop count : 2
+21:46:53.453 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - clicke on btnGettingStartedCloseButton
+21:46:53.454 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 0
+21:46:54.489 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 1
+21:46:55.520 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 2
+21:46:56.555 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 3
+21:46:57.620 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 4
+21:46:58.659 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 5
+21:46:59.722 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 6
+21:47:00.760 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 7
+21:47:01.867 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 8
+21:47:02.912 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 9
+21:47:03.954 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 10
+21:47:04.993 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 11
+21:47:06.038 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 12
+21:47:07.080 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 13
+21:47:08.116 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 14
+21:47:09.156 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 15
+21:47:10.194 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 16
+21:47:11.242 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 17
+21:47:12.342 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 18
+21:47:13.375 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 19
+21:47:14.407 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - loopcount: 20
+21:47:16.436 [main] INFO  com.leonardoAI.pageObject.PO_LoginPage - ✅✅✅ Login PASS ...
+21:47:21.723 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:47:21.724 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Image generation and >> //a//p[text()='Image Generation']
+21:47:22.416 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Image generation
+21:47:26.293 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:47:26.293 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Real Time Canvas and >> //a//p[text()='Realtime Canvas']
+21:47:27.063 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Real Time Canvas
+21:47:29.563 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:47:29.564 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Motion and >> //a//p[text()='Motion']
+21:47:30.792 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - clicke on button >> Motion
+21:47:33.497 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:47:33.499 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Canvas Editor and >> //a//p[text()='Canvas Editor']
+21:47:33.715 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Exception from callMeToClickOnAnyButtonWithNameAndXpath >> no such element: Unable to locate element: {"method":"xpath","selector":"//a//p[text()='Canvas Editor']"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef78b94785145a5463ed72e7c3eef01b, findElement {using=xpath, value=//a//p[text()='Canvas Editor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\koiri\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58032/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef78b94785145a5463ed72e7c3eef01b
+21:47:34.869 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: checkAIToolSubMenus
+21:47:34.869 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Element name and xpath >> Universal Upscaler and >> //a//p[text()='Universal Upscaler']
+21:47:34.901 [main] INFO  com.leonardoAI.utilities.ClickOnAnyButton - Exception from callMeToClickOnAnyButtonWithNameAndXpath >> no such element: Unable to locate element: {"method":"xpath","selector":"//a//p[text()='Universal Upscaler']"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef78b94785145a5463ed72e7c3eef01b, findElement {using=xpath, value=//a//p[text()='Universal Upscaler']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\koiri\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58032/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef78b94785145a5463ed72e7c3eef01b
+21:47:36.012 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Method called: Logout
+21:47:38.074 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - Exception from: clickOnLogoBackButton >> no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@role='group'])[2]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef78b94785145a5463ed72e7c3eef01b, findElement {using=xpath, value=(//a[@role='group'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\koiri\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58032/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ef78b94785145a5463ed72e7c3eef01b
+21:47:38.107 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - null
+21:47:38.127 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - null
+21:47:39.193 [main] INFO  com.leonardoAI.pageObject.PO_HomePage - ✅✅✅ LOGOUT DONE ...

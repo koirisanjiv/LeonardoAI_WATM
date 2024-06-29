@@ -22,6 +22,9 @@ import org.testng.asserts.SoftAssert;
 import com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement;
 import com.leonardoAI.pageObject.pageLocators.PL_HomePage;
 import com.leonardoAI.pageObject.pageLocators.PL_LoginPage;
+import com.leonardoAI.utilities.ClickOnAnyButton;
+import com.leonardoAI.utilities.NavigateToNewTab;
+import com.leonardoAI.utilities.SetDataInTextInputField;
 
 public class PO_LoginPage extends ReUseAbleElement {
 
@@ -32,6 +35,9 @@ public class PO_LoginPage extends ReUseAbleElement {
 	public WebDriverWait wait;
 	public Actions action;
 	public SoftAssert softAssert = new SoftAssert();
+	public SetDataInTextInputField setDataInInputField = new SetDataInTextInputField();
+	public NavigateToNewTab navigateToNewTab = new NavigateToNewTab();
+	public ClickOnAnyButton clickOnAnyButton = new ClickOnAnyButton();
 
 	public PO_LoginPage(WebDriver driver) {
 		super(driver);
@@ -43,10 +49,6 @@ public class PO_LoginPage extends ReUseAbleElement {
 	}
 
 	// to find page elements
-	@FindBy(xpath = PL_LoginPage.address_btnLaunchApp)
-	@CacheLookup
-	public WebElement btnLaunchApp;
-
 	@FindBy(xpath = PL_LoginPage.address_elementGetStarted)
 	@CacheLookup
 	public WebElement elementGetStarted;
@@ -55,25 +57,10 @@ public class PO_LoginPage extends ReUseAbleElement {
 	@CacheLookup
 	WebElement elementSingUpOrLoginWith;
 
-	@FindBy(xpath = PL_LoginPage.address_textemail)
-	@CacheLookup
-	WebElement textemail;
-
-	@FindBy(xpath = PL_LoginPage.address_textpassword)
-	@CacheLookup
-	WebElement textpassword;
-
-	@FindBy(xpath = PL_LoginPage.address_btnSignIn)
-	@CacheLookup
-	WebElement btnSignIn;
-
 	@FindBy(xpath = PL_LoginPage.address_tabCloseModel)
 	@CacheLookup
 	WebElement tabCloseModel;
 
-	public void clickOnLaunchApp() {
-		ruae.switchBetweenTabs(btnLaunchApp);
-	}
 
 	public boolean isSingInPageAppears() {
 		boolean isSingInPageAppears = false;
@@ -84,35 +71,6 @@ public class PO_LoginPage extends ReUseAbleElement {
 		}
 
 		return isSingInPageAppears;
-	}
-
-	// TO SET THE USERNAME/EMAIL AND WAIT TILL IS IS NOT APPERS MAX WAIT TIME(30
-	// SECONDS)
-	public void setUserName(String email) throws InterruptedException {
-		wait.until(ExpectedConditions.elementToBeClickable(textemail));
-		textemail.sendKeys(Keys.CONTROL, "a");
-		textemail.sendKeys(Keys.DELETE);
-		Thread.sleep(200);
-		textemail.sendKeys(email);
-		logger.info("Enteterd email");
-		Thread.sleep(200);
-	}
-
-	// TO SET THE PASSWORD
-	public void setPassword(String password) throws InterruptedException {
-		textpassword.sendKeys(Keys.CONTROL, "a");
-		textpassword.sendKeys(Keys.DELETE);
-		Thread.sleep(200);
-		textpassword.sendKeys(password);
-		logger.info("Entered password");
-		Thread.sleep(200);
-	}
-
-	// TO CLICK ON THE SUBMIT BUTTON
-	public void clickBtnsubmit() throws InterruptedException {
-		btnSignIn.click();
-		logger.info("clicke on login submit button");
-		Thread.sleep(200);
 	}
 
 	// TO CLICK ON THE CLOSE MODEL IF PRESENT
@@ -216,11 +174,12 @@ public class PO_LoginPage extends ReUseAbleElement {
 	public PO_HomePage Login(String userEmail, String userPassword) throws InterruptedException {
 		try {
 			logger.info("Method called Login: Login");
-			clickOnLaunchApp();
+			
+			navigateToNewTab.changeBetweenTabs(driver, "Launch App", PL_LoginPage.address_btnLaunchApp);
 			if (isSingInPageAppears()) {
-				setUserName(userEmail);
-				setPassword(userPassword);
-				clickBtnsubmit();
+				setDataInInputField.callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue(driver, "Email", PL_LoginPage.address_textemail, userEmail);
+				setDataInInputField.callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue(driver, "Password", PL_LoginPage.address_textpassword, userPassword);
+				clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Submit", PL_LoginPage.address_btnSignIn);
 			}
 
 			clickOnCloseModelGettingStarted();

@@ -9,10 +9,18 @@
 
 	<parameter name="browser" value="chrome"></parameter><!-- value is only
 	[chrome, firefor, edge]-->
-	<parameter name="paramtersfromtestNg" value="user,false"></parameter><!--
-	value is only
-	[admin, user, true, false] note: true false is used for debuggermode
-	confirmation-->
+	<parameter name="userType" value="user"></parameter><!--
+	value is only	[admin, user] confirmation-->
+	<parameter name="wantToByPassLoginLogout" value="false"></parameter> <!--
+    value is [true, false]-->
+    <parameter name="enableDisableDebuggerMode" value="false, 9222"></parameter> <!--
+    value is [true,flalse, integer]-->
+    <parameter name="incognitoMode" value="false"></parameter> <!--
+    value is [true, false]-->
+    <parameter name="wantToBlockAdsAndNotifications" value="true"></parameter> <!--
+    value is [true, false]-->
+    <parameter name="headerLessBrowsing" value="false"></parameter> <!--
+    value is [true, false]-->
 
 
 	<test name="LeonardoAI_WATM">
@@ -22,9 +30,9 @@
 
 			<!-- =======LEONARDOAI WEBSITE TESTING========= -->
 
-			<!--<class name="com.leonardoAI.testCases.TC_Home"/>-->
+			<class name="com.leonardoAI.testCases.TC_Home"/>
 
-			<class name="com.leonardoAI.testCases.TC_ImageGenerationPage" />
+			<!--<class name="com.leonardoAI.testCases.TC_ImageGenerationPage" />-->
 
 		</classes>
 	</test> <!--

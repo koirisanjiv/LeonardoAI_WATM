@@ -15,6 +15,9 @@ import org.testng.asserts.SoftAssert;
 
 import com.leonardoAI.ReUseAble.PageObject.ReUseAbleElement;
 import com.leonardoAI.pageObject.pageLocators.PL_HomePage;
+import com.leonardoAI.utilities.ClickOnAnyButton;
+import com.leonardoAI.utilities.NavigateToNewTab;
+import com.leonardoAI.utilities.SetDataInTextInputField;
 
 public class PO_HomePage extends ReUseAbleElement {
 
@@ -28,6 +31,10 @@ public class PO_HomePage extends ReUseAbleElement {
 	public Actions action;
 	public SoftAssert softAssert = new SoftAssert();
 
+	public SetDataInTextInputField setDataInInputField = new SetDataInTextInputField();
+	public NavigateToNewTab navigateToNewTab = new NavigateToNewTab();
+	public ClickOnAnyButton clickOnAnyButton = new ClickOnAnyButton();
+	
 	// HOMEPAGE CONSTRUCTOR CREATION
 	public PO_HomePage(WebDriver driver) {
 		super(driver);
@@ -234,24 +241,29 @@ public class PO_HomePage extends ReUseAbleElement {
 	//TO CHECK AI TOOLS SUB MENUS
 	public PO_HomePage checkAIToolSubMenus() throws InterruptedException {
 		Thread.sleep(5000);
-		clickOnMenuImageGeneration();
+		//clickOnMenuImageGeneration();
+		clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Image generation", PL_HomePage.address_imageGeneration);
 		driver.navigate().back();
 		Thread.sleep(1000);
 		
-		clickOnMenuRealtimeCanvas();
+		//clickOnMenuRealtimeCanvas();
+		clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Real Time Canvas", PL_HomePage.address_realtimeCanvas);
 		driver.navigate().back();
 		Thread.sleep(1000);
 		
-		clickOnMenuMotion();
+		//clickOnMenuMotion();
+		clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Motion", PL_HomePage.address_motion);
 		Thread.sleep(1000);
 		clickOnCloseButtonModelImage2Motion();
 		driver.navigate().back();
 		
-		clickOnMenuCanvasEditor();
+		//clickOnMenuCanvasEditor();
+		clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Canvas Editor", PL_HomePage.address_canvasEditor);
 		driver.navigate().back();
 		Thread.sleep(1000);
 		
-		clickOnMenuUiversalUpscaler();
+		//clickOnMenuUiversalUpscaler();
+		clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Universal Upscaler", PL_HomePage.address_universalUpscaler);
 		driver.navigate().back();
 		Thread.sleep(1000);
 		
