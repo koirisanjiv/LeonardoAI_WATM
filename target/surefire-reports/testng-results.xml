@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-23T17:20:26 IST" name="Suite" finished-at="2024-06-23T17:22:18 IST" duration-ms="111340">
+  <suite started-at="2024-06-29T19:21:44 IST" name="Suite" finished-at="2024-06-29T19:24:27 IST" duration-ms="162623">
     <groups>
     </groups>
-    <test started-at="2024-06-23T17:20:26 IST" name="LeonardoAI_WATM" finished-at="2024-06-23T17:22:18 IST" duration-ms="111340">
+    <test started-at="2024-06-29T19:21:44 IST" name="LeonardoAI_WATM" finished-at="2024-06-29T19:24:27 IST" duration-ms="162623">
       <class name="com.leonardoAI.testCases.TC_ImageGenerationPage">
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@555cf22]" started-at="2024-06-23T17:20:27 IST" name="Setup" finished-at="2024-06-23T17:20:49 IST" duration-ms="22155" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:21:45 IST" name="Setup" finished-at="2024-06-29T19:22:26 IST" duration-ms="41277" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,48 +18,52 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="Login(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@555cf22]" started-at="2024-06-23T17:20:49 IST" name="Login" finished-at="2024-06-23T17:21:27 IST" duration-ms="37778" status="PASS">
+        <test-method is-config="true" signature="getDataFromTestNg(org.testng.ITestContext)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:22:26 IST" name="getDataFromTestNg" finished-at="2024-06-29T19:22:26 IST" duration-ms="19" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user,false]]>
+                <![CDATA[org.testng.TestRunner@1544ded3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDataFromTestNg -->
+        <test-method is-config="true" signature="Login(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:22:26 IST" name="Login" finished-at="2024-06-29T19:23:06 IST" duration-ms="40114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="test_GenerateImage()[pri:1, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@555cf22]" started-at="2024-06-23T17:21:27 IST" name="test_GenerateImage" finished-at="2024-06-23T17:21:57 IST" duration-ms="30642" status="PASS">
+        <test-method signature="test_GenerateImage()[pri:1, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:23:06 IST" name="test_GenerateImage" finished-at="2024-06-29T19:24:08 IST" duration-ms="62247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_GenerateImage -->
-        <test-method signature="test_DownLoadGenerateImage()[pri:2, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@555cf22]" started-at="2024-06-23T17:21:58 IST" name="test_DownLoadGenerateImage" finished-at="2024-06-23T17:22:05 IST" duration-ms="7026" status="PASS">
+        <test-method signature="test_DownLoadGenerateImage()[pri:2, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:24:08 IST" name="test_DownLoadGenerateImage" finished-at="2024-06-29T19:24:14 IST" duration-ms="5299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_DownLoadGenerateImage -->
-        <test-method signature="test_RenameDonwloadedFile()[pri:3, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@555cf22]" started-at="2024-06-23T17:22:05 IST" name="test_RenameDonwloadedFile" finished-at="2024-06-23T17:22:05 IST" duration-ms="326" status="PASS">
+        <test-method signature="test_RenameDonwloadedFile()[pri:3, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:24:14 IST" name="test_RenameDonwloadedFile" finished-at="2024-06-29T19:24:14 IST" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_RenameDonwloadedFile -->
-        <test-method is-config="true" signature="Logout(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@555cf22]" started-at="2024-06-23T17:22:05 IST" name="Logout" finished-at="2024-06-23T17:22:17 IST" duration-ms="11870" status="PASS">
+        <test-method is-config="true" signature="Logout(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:24:14 IST" name="Logout" finished-at="2024-06-29T19:24:25 IST" duration-ms="11338" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user,false]]>
+                <![CDATA[user]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="Teardown(java.lang.String)[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@555cf22]" started-at="2024-06-23T17:22:17 IST" name="Teardown" finished-at="2024-06-23T17:22:18 IST" depends-on-methods="com.leonardoAI.testCases.BaseClass.Logout" duration-ms="1011" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user,false]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.leonardoAI.testCases.TC_ImageGenerationPage@7bb6ab3a]" started-at="2024-06-29T19:24:25 IST" name="Teardown" finished-at="2024-06-29T19:24:27 IST" depends-on-methods="com.leonardoAI.testCases.BaseClass.Logout" duration-ms="1272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->

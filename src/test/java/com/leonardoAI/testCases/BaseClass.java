@@ -28,6 +28,7 @@ public class BaseClass {
 
 	// FOR FILE ACTION
 	public static String fileLocation = "C:\\Users\\koiri\\Downloads";
+	private static boolean wantToTackActionOnFiles = false;
 
 	public static WebDriver driver;
 	public PO_HomePage hp;
@@ -64,7 +65,7 @@ public class BaseClass {
 	@BeforeTest
 	public void getDataFromTestNg(ITestContext context) {
 		// TO ENABLE/DISABLE DEBUGGGER MODE
-		String paramEnableDisableDebuggerMode = context.getCurrentXmlTest().getParameter("enableDisableDebuggerMode");
+		String paramEnableDisableDebuggerMode = context.getCurrentXmlTest().getParameter("enableDebuggerMode");
 		String[] debuggerModeAndPort = paramEnableDisableDebuggerMode.split(",");
 		wantToEnableDebuggerMode = Boolean.parseBoolean(debuggerModeAndPort[0].trim());
 		debuggerPort = Integer.parseInt(debuggerModeAndPort[1].trim());
@@ -88,17 +89,17 @@ public class BaseClass {
 		// TO DISABLE ADS AND NOTIFICATIONS
 		String paramWantToBlockAdsAndNotifications = context.getCurrentXmlTest()
 				.getParameter("wantToBlockAdsAndNotifications");
-		incognitoMode = Boolean.parseBoolean(paramWantToBlockAdsAndNotifications);
+		wantToBlockAdsAndNotifications = Boolean.parseBoolean(paramWantToBlockAdsAndNotifications);
 		logger.info("wantToBlockAdsAndNotifications: " + wantToBlockAdsAndNotifications);
 
 	}
 
 	// to select the driver
 	@Parameters("browser")
-	@BeforeTest
+	@BeforeTest(dependsOnMethods = "getDataFromTestNg")
 	public void Setup(String br) throws InterruptedException {
 		System.out.println("Current thread name: " + Thread.currentThread().getName());
-
+		
 		logger.info("Base class started...");
 
 		if (br.equalsIgnoreCase("chrome")) {
@@ -107,12 +108,12 @@ public class BaseClass {
 			System.setProperty("webdriver.chromedriver", rcf.getChromePath());
 
 			// OTHER WISE USE BELOW LINE IT WILL TAKES DRIVER FROM THE POM.XML FILES
-			// WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			// logger.info("2");
 
 			// TO INITIALIZE CHROME DRIVER
 			driver = new ChromeDriver(cco.customizedChromeOptions(wantToBlockAdsAndNotifications, headerLessBrowsing,
-					incognitoMode, wantToEnableDebuggerMode, debuggerPort, false, fileLocation));
+					incognitoMode, wantToEnableDebuggerMode, debuggerPort, wantToTackActionOnFiles, fileLocation));
 
 			logger.info("Chrome driver selected");
 		} else if (br.equalsIgnoreCase("firefox")) {
@@ -159,7 +160,7 @@ public class BaseClass {
 	public void Logout(String userType) throws InterruptedException {
 		try {
 			if (userType.equalsIgnoreCase("user")) {
-				hp.UserLogout();
+				//hp.UserLogout();
 			}
 		} catch (Exception e) {
 			logger.warn("Exception From: Logout >> " + e.getMessage());
@@ -170,7 +171,7 @@ public class BaseClass {
 	// TO CLOSE THE DIRVER
 	@AfterTest(dependsOnMethods = "Logout")
 	public void Teardown() {
-		driver.quit();
+		//driver.quit();
 		logger.info("Driver shutdown");
 	}
 

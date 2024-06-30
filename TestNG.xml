@@ -11,9 +11,9 @@
 	[chrome, firefor, edge]-->
 	<parameter name="userType" value="user"></parameter><!--
 	value is only	[admin, user] confirmation-->
-	<parameter name="wantToByPassLoginLogout" value="false"></parameter> <!--
+	<parameter name="wantToByPassLoginLogout" value="true"></parameter> <!--
     value is [true, false]-->
-    <parameter name="enableDisableDebuggerMode" value="false, 9222"></parameter> <!--
+    <parameter name="enableDebuggerMode" value="true, 9222"></parameter> <!--
     value is [true,flalse, integer]-->
     <parameter name="incognitoMode" value="false"></parameter> <!--
     value is [true, false]-->
@@ -30,9 +30,9 @@
 
 			<!-- =======LEONARDOAI WEBSITE TESTING========= -->
 
-			<class name="com.leonardoAI.testCases.TC_Home"/>
+			<!--<class name="com.leonardoAI.testCases.TC_Home"/>-->
 
-			<!--<class name="com.leonardoAI.testCases.TC_ImageGenerationPage" />-->
+			<class name="com.leonardoAI.testCases.TC_ImageGenerationPage" />
 
 		</classes>
 	</test> <!--

@@ -140,13 +140,13 @@ public class PO_LoginPage extends ReUseAbleElement {
 	}
 
 	// TO CLICK ON THE BUTTON INTRO GUIDE
-	public void clickOnCloseModelIntroGuide(String introGuidePath) throws InterruptedException {
+	public boolean clickOnCloseModelIntroGuide(String introGuidePath) throws InterruptedException {
 		int loopcount = 0;
 		boolean isGettingStartedModelPresent = false;
 		while (loopcount <= 20) {
 			try {
-				logger.info("loopcount: "+loopcount);
-				Thread.sleep(1000);
+				//logger.info("loopcount: "+loopcount);
+				Thread.sleep(500);
 				WebElement btnIntroGuide = driver.findElement(By.xpath(introGuidePath));
 				
 				if (btnIntroGuide.isDisplayed() && btnIntroGuide.isEnabled()) {
@@ -167,8 +167,11 @@ public class PO_LoginPage extends ReUseAbleElement {
 				loopcount++;
 			}
 		}
+		return isGettingStartedModelPresent;
 
 	}
+	
+	
 
 	// FOR USER LOGIN
 	public PO_HomePage Login(String userEmail, String userPassword) throws InterruptedException {

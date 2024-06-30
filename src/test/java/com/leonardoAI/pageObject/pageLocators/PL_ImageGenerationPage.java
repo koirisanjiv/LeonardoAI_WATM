@@ -4,6 +4,7 @@ public class PL_ImageGenerationPage {
    
 	public static final String address_gettingStartedCloseButton = "(//button[starts-with(@aria-label, 'Close')])[1]";
 	public static final String address_introGuide = "(//button[starts-with(@aria-label, 'Close')])[1]";
+	public static final String address_closseButtonGuige = "//button[starts-with(@aria-label, 'Close')]";
 	public static final String address_elementIsImageGeneratePageReady = "(//*[normalize-space()='Image Generation'])[1]";
     public static final String address_textareaPromptInput = "(//textarea[@id='prompt-input'])[1]";
     public static final String address_btnGenerateImage= "//div[@data-tour-id='generate-button']";

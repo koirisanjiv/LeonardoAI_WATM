@@ -46,17 +46,25 @@ public class CustomizedChromeOptions {
 			logger.info("Entered into Debugging mode with port:"+debuggerPort+" Is debuggerMode"+debuggerMode);
 		}
 		
-		if(wantToTackActionOnFiles) {
-			
-			String downloadFilePath = fileLocation;
-	        Map<String, Object> actionsOnFiles = new HashMap<>();
-	        actionsOnFiles.put("download.default_directory", downloadFilePath);
-	        actionsOnFiles.put("download.prompt_for_download", false);
-	        actionsOnFiles.put("download.directory_upgrade", true);
-	        actionsOnFiles.put("safebrowsing.enabled", true);
-	        options.setExperimentalOption("prefs", actionsOnFiles);
-	        logger.info("File actions parameters set successfully");
-		}
+		if (wantToTackActionOnFiles) {
+            try {
+                String downloadFilePath = fileLocation;
+                Map<String, Object> prefs = new HashMap<>();
+                logger.info("1");
+                prefs.put("download.default_directory", downloadFilePath);
+                logger.info("2");
+                prefs.put("download.prompt_for_download", false);
+                logger.info("3");
+                prefs.put("download.directory_upgrade", true);
+                logger.info("4");
+                prefs.put("safebrowsing.enabled", true);
+                logger.info("5");
+                options.setExperimentalOption("prefs", prefs);
+                logger.info("File actions parameters set successfully");
+            } catch (Exception e) {
+                logger.warn("Exception while file actions: " + e.getMessage());
+            }
+        }
 		
 		return options;
 	}

@@ -167,8 +167,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;wantToBlockAdsAndNotifications&quot; value=&quot;true&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;parameter name=&quot;paramtersfromtestNg&quot; value=&quot;user,false&quot;/&gt;
+  &lt;parameter name=&quot;incognitoMode&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;userType&quot; value=&quot;user&quot;/&gt;
+  &lt;parameter name=&quot;enableDisableDebuggerMode&quot; value=&quot;false, 9222&quot;/&gt;
+  &lt;parameter name=&quot;headerLessBrowsing&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;wantToByPassLoginLogout&quot; value=&quot;false&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.leonardoAI.utilities.ExtentReport&quot;/&gt;
   &lt;/listeners&gt;
@@ -218,20 +223,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_GenerateImage')
 data.setCell(0, 2, 'com.leonardoAI.testCases.TC_ImageGenerationPage')
-data.setCell(0, 3, 30642);
+data.setCell(0, 3, 62247);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test_DownLoadGenerateImage')
 data.setCell(1, 2, 'com.leonardoAI.testCases.TC_ImageGenerationPage')
-data.setCell(1, 3, 7026);
+data.setCell(1, 3, 5299);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_RenameDonwloadedFile')
 data.setCell(2, 2, 'com.leonardoAI.testCases.TC_ImageGenerationPage')
-data.setCell(2, 3, 326);
+data.setCell(2, 3, 420);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -262,29 +267,33 @@ return data;
                 <span class="method-name">Setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">getDataFromTestNg(org.testng.TestRunner@1544ded3)</span>
+                <span class="method-start">41279 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">Login(user,false)</span>
-                <span class="method-start">22233 ms</span>
+                <span class="method-name">Login(user)</span>
+                <span class="method-start">41395 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test_GenerateImage</span>
-                <span class="method-start">60033 ms</span>
+                <span class="method-start">81524 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_DownLoadGenerateImage</span>
-                <span class="method-start">90711 ms</span>
+                <span class="method-start">143793 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_RenameDonwloadedFile</span>
-                <span class="method-start">97751 ms</span>
+                <span class="method-start">149097 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
-                <span class="method-name">Logout(user,false)</span>
-                <span class="method-start">98085 ms</span>
+                <span class="method-name">Logout(user)</span>
+                <span class="method-start">149521 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
-                <span class="method-name">Teardown(user,false)</span>
-                <span class="method-start">109955 ms</span>
+                <span class="method-name">Teardown</span>
+                <span class="method-start">160859 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

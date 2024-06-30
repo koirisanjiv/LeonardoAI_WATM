@@ -28,6 +28,8 @@ import com.leonardoAI.pageObject.pageLocators.PL_ImageGenerationPage;
 import com.leonardoAI.pageObject.pageLocators.PL_LoginPage;
 import com.leonardoAI.projectUtility.FindThreeDotAndClick;
 import com.leonardoAI.testCases.BaseClass;
+import com.leonardoAI.utilities.CheckCloseButtonPresece;
+import com.leonardoAI.utilities.CheckElementIsEnabled;
 import com.leonardoAI.utilities.ClickOnAnyButton;
 import com.leonardoAI.utilities.NavigateToNewTab;
 import com.leonardoAI.utilities.SetDataInTextInputField;
@@ -49,6 +51,8 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 	public NavigateToNewTab navigateToNewTab = new NavigateToNewTab();
 	public ClickOnAnyButton clickOnAnyButton = new ClickOnAnyButton();
 	public WaitForNewIFilePresenceInDirectory filePreseceIndirectory = new WaitForNewIFilePresenceInDirectory();
+	public CheckElementIsEnabled checkElementEnable = new CheckElementIsEnabled();
+	public CheckCloseButtonPresece checkCloseButtonPresence = new CheckCloseButtonPresece();
 
 	// CONSTRUCTOR CREATION
 	public PO_ImageGenerationPage(WebDriver driver) {
@@ -116,46 +120,62 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 				loopcount++;
 			}
 		}
-		
+
+	}
+
+	// TO CLICK ON THE BUTTON INTRO GUIDE
+	public void clickOnCloseModelIntroGuide(String closeButtonBaseAddress) throws InterruptedException {
+		int loopcount = 0;
+		while (loopcount < 5) {
+			for (int i = 1; i < 4; i++) {
+				String closeButtonAddress = "(" + closeButtonBaseAddress + ")[" + i + "]";
+				try {
+					Thread.sleep(1000);
+					WebElement buttonClose = driver.findElement(By.xpath(closeButtonAddress));
+					buttonClose.click();
+				} catch (Exception e) {
+					logger.info("Exception : >> " + "Inner loop count: " + i + "Outer loop count: " + loopcount);
+				}
+			}
+			loopcount++;
+		}
 	}
 
 	public boolean checkIsImageGeneratePageReady() throws InterruptedException {
 		boolean isImageGeneratePageReady = false;
 		try {
-			lp.clickOnCloseModelIntroGuide(PL_ImageGenerationPage.address_introGuide);
+			clickOnCloseModelIntroGuide(PL_ImageGenerationPage.address_closseButtonGuige);
 			wait.until(
 					ExpectedConditions.textToBePresentInElement(elementIsImageGeneratePageReady, "Image Generation"));
 			if (elementIsImageGeneratePageReady.isDisplayed()) {
 				isImageGeneratePageReady = true;
 			}
 		} catch (Exception e) {
-			logger.info(e.getCause());
+			logger.info("Exception from: checkIsImageGeneratePageReady >> " + e.getMessage());
 		}
-
 
 		return isImageGeneratePageReady;
 	}
-
 
 	public boolean checkIsImageGenerated() {
 		boolean isImageGenerated = false;
 		try {
 			wait = new WebDriverWait(driver, Duration.ofSeconds(500));
-			WebElement isImageStillGenerating = driver.findElement(By.xpath(PL_ImageGenerationPage.address_isImageStillGenerating));
+			WebElement isImageStillGenerating = driver
+					.findElement(By.xpath(PL_ImageGenerationPage.address_isImageStillGenerating));
 			logger.info("Going go wait for: 500 seconds dynamically");
 			wait.until(ExpectedConditions.invisibilityOf(isImageStillGenerating));
-			
+
 			try {
 				isImageStillGenerating.isDisplayed();
-				
-			}catch(Exception e) {
+
+			} catch (Exception e) {
 				isImageGenerated = true;
 				logger.info("✅✅✅ Image generated successfully");
 			}
-		
-			
+
 		} catch (Exception e) {
-			logger.info(e.getCause());
+			logger.info("Exception: " + e.getMessage());
 		}
 		return isImageGenerated;
 	}
@@ -163,22 +183,23 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 	public void findImageFromList(int imageSerialNumber) throws InterruptedException {
 		String address_specificImage = "(" + PL_ImageGenerationPage.address_listGeneratedImage + ")["
 				+ imageSerialNumber + "]";
+		logger.info("Catched image address: "+address_specificImage);
 		WebElement visitAnySpecificImage = driver.findElement(By.xpath(address_specificImage));
-		action.moveToElement(visitAnySpecificImage).pause(500).build().perform();
+		action.moveToElement(visitAnySpecificImage).pause(200).build().perform();
 		Thread.sleep(200);
 	}
 
 	public void clickOnBtnDownloadImagePresentOnTheImage(int imageSerialNumber) throws InterruptedException {
 		findImageFromList(imageSerialNumber);
+		Thread.sleep(3000);
 		try {
 			action.moveToElement(btnDownloadImage).build().perform();
-			Thread.sleep(200);
+			//btnDownloadImage.clear();
 			action.moveToElement(btnDownloadImage).click().build().perform();
 			logger.info("Clicked on the Donwlaod Image");
 			filePreseceIndirectory.waitForNewFileInDirectory(new File(BaseClass.fileLocation), 60000);
-
 		} catch (Exception e) {
-			logger.info(e.getCause());
+			logger.info("Exception : "+e.getMessage());
 		}
 	}
 
@@ -192,8 +213,10 @@ public class PO_ImageGenerationPage extends ReUseAbleElement {
 		logger.info("Caller methods name: " + callerMethodName);
 
 		if (checkIsImageGeneratePageReady()) {
-			setDataInInputField.callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue(driver, "SetPrompt", PL_ImageGenerationPage.address_textareaPromptInput, yourPrompt);
-			clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Generate Image", PL_ImageGenerationPage.address_btnGenerateImage);
+			setDataInInputField.callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue(driver, "SetPrompt",
+					PL_ImageGenerationPage.address_textareaPromptInput, yourPrompt);
+			clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(driver, "Generate Image",
+					PL_ImageGenerationPage.address_btnGenerateImage);
 			checkIsImageGenerated();
 		}
 
