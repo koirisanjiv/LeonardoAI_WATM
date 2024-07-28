@@ -47,23 +47,23 @@ public class CustomizedChromeOptions {
 		}
 		
 		if (wantToTackActionOnFiles) {
-            try {
-                String downloadFilePath = fileLocation;
-                Map<String, Object> prefs = new HashMap<>();
-                logger.info("1");
-                prefs.put("download.default_directory", downloadFilePath);
-                logger.info("2");
-                prefs.put("download.prompt_for_download", false);
-                logger.info("3");
-                prefs.put("download.directory_upgrade", true);
-                logger.info("4");
-                prefs.put("safebrowsing.enabled", true);
-                logger.info("5");
-                options.setExperimentalOption("prefs", prefs);
-                logger.info("File actions parameters set successfully");
-            } catch (Exception e) {
-                logger.warn("Exception while file actions: " + e.getMessage());
-            }
+//            try {
+//                String downloadFilePath = fileLocation;
+//                Map<String, Object> prefs = new HashMap<>();
+//                logger.info("1");
+//                prefs.put("download.default_directory", downloadFilePath);
+//                logger.info("2");
+//                prefs.put("download.prompt_for_download", false);
+//                logger.info("3");
+//                prefs.put("download.directory_upgrade", true);
+//                logger.info("4");
+//                prefs.put("safebrowsing.enabled", true);
+//                logger.info("5");
+//                options.setExperimentalOption("prefs", prefs);
+//                logger.info("File actions parameters set successfully");
+//            } catch (Exception e) {
+//                logger.warn("Exception while file actions: " + e.getMessage());
+//            }
         }
 		
 		return options;

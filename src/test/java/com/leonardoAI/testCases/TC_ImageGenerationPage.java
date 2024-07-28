@@ -30,7 +30,7 @@ public class TC_ImageGenerationPage extends BaseClass {
 	public FindFileAndRename findFileandRename = new FindFileAndRename();
 
 	// TO GENERATE IAMGE
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void test_GenerateImage() throws Throwable {
 		po_igp = callMeBeforePerformAnyAction();
 		po_igp.generateImage(writeYourPrompt);
